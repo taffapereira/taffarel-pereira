@@ -3,14 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taffarel Pereira — SEO Content Writer</title>
+<title>Taffarel Pereira | Digital Operations Support, Research, Data & Simple Automation</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0a0a0a;--bg2:#111;--bg3:#181818;--border:#222;--text:#e8e4dc;--muted:#666;--accent:#c8f060;--accent2:#f0c860;--white:#f5f1ea}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.6;overflow-x:hidden}
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.5rem 4rem;transition:all .4s}
 nav.scrolled{background:rgba(10,10,10,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.15em;color:var(--white);text-decoration:none}
@@ -19,7 +18,6 @@ nav.scrolled{background:rgba(10,10,10,.92);backdrop-filter:blur(20px);border-bot
 .nav-links a:hover{color:var(--white)}
 .nav-cta{background:var(--accent);color:#0a0a0a;padding:.55rem 1.4rem;font-size:.75rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .2s}
 .nav-cta:hover{background:var(--accent2)}
-/* HERO */
 .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
 .hero-left{display:flex;flex-direction:column;justify-content:flex-end;padding:8rem 4rem 5rem;position:relative;z-index:2}
 .hero-tag{display:inline-flex;align-items:center;gap:.5rem;margin-bottom:2rem}
@@ -30,7 +28,7 @@ nav.scrolled{background:rgba(10,10,10,.92);backdrop-filter:blur(20px);border-bot
 .hero-name span{color:var(--accent)}
 .hero-role{font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:3rem;display:flex;align-items:center;gap:1rem}
 .hero-role::before{content:'';width:40px;height:1px;background:var(--accent)}
-.hero-desc{max-width:420px;font-size:1rem;color:#888;line-height:1.8;margin-bottom:3rem}
+.hero-desc{max-width:560px;font-size:1rem;color:#888;line-height:1.8;margin-bottom:3rem}
 .hero-actions{display:flex;gap:1rem;align-items:center}
 .btn-primary{background:var(--accent);color:#0a0a0a;padding:.9rem 2rem;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .2s}
 .btn-primary:hover{background:var(--accent2);transform:translateY(-2px)}
@@ -40,20 +38,17 @@ nav.scrolled{background:rgba(10,10,10,.92);backdrop-filter:blur(20px);border-bot
 .hero-right::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--bg) 0%,transparent 40%),linear-gradient(to top,var(--bg) 0%,transparent 25%);z-index:1}
 .hero-bg-text{position:absolute;bottom:-2rem;right:-1rem;font-family:'Bebas Neue',sans-serif;font-size:22vw;color:rgba(255,255,255,.025);white-space:nowrap;line-height:1;z-index:0}
 .hero-deco{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:0;width:300px;height:300px;opacity:.04}
-/* STATS */
 .stats-bar{border-top:1px solid var(--border);border-bottom:1px solid var(--border);display:grid;grid-template-columns:repeat(4,1fr)}
 .stat-item{padding:2rem 4rem;border-right:1px solid var(--border)}
 .stat-item:last-child{border-right:none}
 .stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--white);line-height:1}
 .stat-num span{color:var(--accent)}
 .stat-label{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:.3rem}
-/* SECTION */
 section{padding:7rem 4rem}
 .section-header{display:flex;align-items:center;gap:1.5rem;margin-bottom:5rem}
 .section-num{font-family:'DM Mono',monospace;font-size:.75rem;color:var(--accent);letter-spacing:.1em}
 .section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);letter-spacing:.05em;color:var(--white)}
 .section-line{flex:1;height:1px;background:var(--border)}
-/* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
 .about-text h3{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--white);letter-spacing:.05em;margin-bottom:1.5rem}
 .about-text p{color:#888;line-height:1.9;margin-bottom:1.5rem;font-size:.95rem}
@@ -62,7 +57,6 @@ section{padding:7rem 4rem}
 .detail-label{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .detail-value{font-size:.9rem;color:var(--white)}
 .detail-value.accent{color:var(--accent)}
-/* SERVICES */
 #services{background:var(--bg2)}
 .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
 .service-card{background:var(--bg2);padding:3rem;transition:background .3s;position:relative;overflow:hidden}
@@ -74,7 +68,6 @@ section{padding:7rem 4rem}
 .service-desc{color:#666;font-size:.9rem;line-height:1.8;margin-bottom:2rem}
 .service-tags{display:flex;flex-wrap:wrap;gap:.5rem}
 .tag{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--border);padding:.3rem .7rem}
-/* PORTFOLIO */
 .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
 .portfolio-card{background:var(--bg);padding:2.5rem;transition:background .3s;position:relative}
 .portfolio-card:hover{background:var(--bg3)}
@@ -83,7 +76,6 @@ section{padding:7rem 4rem}
 .portfolio-desc{font-size:.85rem;color:#555;line-height:1.7;margin-bottom:1.5rem}
 .portfolio-meta{font-size:.7rem;letter-spacing:.08em;color:var(--muted);font-style:italic}
 .portfolio-num{position:absolute;top:2.5rem;right:2.5rem;font-family:'Bebas Neue',sans-serif;font-size:3rem;color:rgba(255,255,255,.04);line-height:1}
-/* SKILLS */
 #skills{background:var(--bg2)}
 .skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3rem}
 .skill-group h4{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.1em;color:var(--accent);margin-bottom:1.5rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
@@ -92,11 +84,10 @@ section{padding:7rem 4rem}
 .skill-list li:hover{color:var(--white)}
 .skill-list li::before{content:'';width:4px;height:4px;background:var(--border);border-radius:50%;flex-shrink:0;transition:background .2s}
 .skill-list li:hover::before{background:var(--accent)}
-/* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:6rem;align-items:start}
 .contact-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,6vw,5rem);line-height:.95;letter-spacing:.02em;color:var(--white);margin-bottom:2rem}
 .contact-headline span{color:var(--accent)}
-.contact-sub{color:#666;font-size:.95rem;line-height:1.8;max-width:480px;margin-bottom:3rem}
+.contact-sub{color:#666;font-size:.95rem;line-height:1.8;max-width:560px;margin-bottom:3rem}
 .contact-link{display:flex;align-items:center;justify-content:space-between;padding:1.3rem 0;border-bottom:1px solid var(--border);text-decoration:none;transition:all .2s}
 .contact-link:first-child{border-top:1px solid var(--border)}
 .contact-link:hover{padding-left:.5rem}
@@ -115,36 +106,16 @@ section{padding:7rem 4rem}
 .btn-full:hover{background:var(--accent2)}
 .btn-full-ghost{display:block;text-align:center;border:1px solid var(--border);color:var(--muted);padding:1rem 2rem;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .2s}
 .btn-full-ghost:hover{border-color:var(--white);color:var(--white)}
-/* FOOTER */
 footer{border-top:1px solid var(--border);padding:2rem 4rem;display:flex;justify-content:space-between;align-items:center}
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.15em;color:var(--muted)}
 .footer-copy{font-size:.75rem;color:var(--muted)}
 .footer-links{display:flex;gap:1.5rem;list-style:none}
 .footer-links a{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
 .footer-links a:hover{color:var(--white)}
-/* REVEAL */
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
-/* RESPONSIVE */
-@media(max-width:1024px){
-  nav{padding:1.5rem 2rem}
-  .hero{grid-template-columns:1fr}
-  .hero-right{display:none}
-  section{padding:5rem 2rem}
-  .stats-bar{grid-template-columns:repeat(2,1fr)}
-  .stat-item{padding:1.5rem 2rem}
-  .about-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}
-  .portfolio-grid{grid-template-columns:1fr 1fr}
-  .skills-grid{grid-template-columns:repeat(2,1fr)}
-  .services-grid{grid-template-columns:1fr}
-  footer{flex-direction:column;gap:1rem;text-align:center}
-}
-@media(max-width:640px){
-  .nav-links{display:none}
-  .hero-name{font-size:4rem}
-  .portfolio-grid{grid-template-columns:1fr}
-  .skills-grid{grid-template-columns:1fr 1fr}
-}
+@media(max-width:1024px){nav{padding:1.5rem 2rem}.hero{grid-template-columns:1fr}.hero-right{display:none}section{padding:5rem 2rem}.stats-bar{grid-template-columns:repeat(2,1fr)}.stat-item{padding:1.5rem 2rem}.about-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}.portfolio-grid{grid-template-columns:1fr 1fr}.skills-grid{grid-template-columns:repeat(2,1fr)}.services-grid{grid-template-columns:1fr}footer{flex-direction:column;gap:1rem;text-align:center}}
+@media(max-width:640px){.nav-links{display:none}.hero-name{font-size:4rem}.portfolio-grid{grid-template-columns:1fr}.skills-grid{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -154,7 +125,7 @@ footer{border-top:1px solid var(--border);padding:2rem 4rem;display:flex;justify
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#portfolio">Sample Work</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -165,41 +136,41 @@ footer{border-top:1px solid var(--border);padding:2rem 4rem;display:flex;justify
   <div class="hero-left">
     <div class="hero-tag"><span></span><p>Available for new projects</p></div>
     <h1 class="hero-name">TAFFAREL<br><span>PEREIRA</span></h1>
-    <p class="hero-role">SEO Content Writer &amp; Copywriter</p>
-    <p class="hero-desc">Blog posts and web copy that climb Google rankings and turn readers into paying customers. Based in Brazil — working with clients worldwide.</p>
+    <p class="hero-role">Digital Operations Support, Research, Data &amp; Simple Automation</p>
+    <p class="hero-desc">Reliable digital support for web research, data organization, spreadsheets, documentation, and simple operations. Clear communication, practical outputs, and easy-to-review deliverables.</p>
     <div class="hero-actions">
-      <a href="#portfolio" class="btn-primary">View My Work</a>
+      <a href="#portfolio" class="btn-primary">View Sample Work</a>
       <a href="#contact" class="btn-ghost">Get in Touch →</a>
     </div>
   </div>
   <div class="hero-right">
     <img src="taffarel-photo.png" alt="Taffarel Pereira" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
-    <div class="hero-bg-text">SEO</div>
+    <div class="hero-bg-text">OPS</div>
   </div>
 </section>
 
 <div class="stats-bar reveal">
-  <div class="stat-item"><div class="stat-num">2<span>+</span></div><div class="stat-label">Years Experience</div></div>
-  <div class="stat-item"><div class="stat-num">50<span>+</span></div><div class="stat-label">Articles Delivered</div></div>
-  <div class="stat-item"><div class="stat-num">100<span>%</span></div><div class="stat-label">Client Satisfaction</div></div>
-  <div class="stat-item"><div class="stat-num">2<span>–3</span></div><div class="stat-label">Day Turnaround</div></div>
+  <div class="stat-item"><div class="stat-num">Web</div><div class="stat-label">Research Support</div></div>
+  <div class="stat-item"><div class="stat-num">Data</div><div class="stat-label">Organization &amp; Sheets</div></div>
+  <div class="stat-item"><div class="stat-num">Docs</div><div class="stat-label">Documentation Support</div></div>
+  <div class="stat-item"><div class="stat-num">$18</div><div class="stat-label">Per Hour on Upwork</div></div>
 </div>
 
 <section id="about">
-  <div class="section-header reveal"><span class="section-num">01</span><h2 class="section-title">About Me</h2><div class="section-line"></div></div>
+  <div class="section-header reveal"><span class="section-num">01</span><h2 class="section-title">About</h2><div class="section-line"></div></div>
   <div class="about-grid">
     <div class="about-text reveal">
-      <h3>SEO Strategy meets<br>Persuasive Writing.</h3>
-      <p>I'm Taffarel Pereira, a freelance SEO Content Writer based in Cascavel, Brazil. Since 2024, I've been creating content that helps businesses rank on Google and convert organic traffic into real results.</p>
-      <p>My background combines SEO strategy with persuasive writing — I don't just write for search engines, I write for people. Every article I deliver is structured to rank, engage, and drive action.</p>
-      <p>I work with clients globally through Upwork, delivering blog posts, web copy, and product descriptions with fast turnaround and clear communication at every step.</p>
+      <h3>Practical support for<br>clear digital work.</h3>
+      <p>I'm Taffarel Pereira, a freelancer based in Cascavel, Brazil. I help with digital work that needs structure, clarity, and reliable execution.</p>
+      <p>My focus is on low-friction operational support, especially web research, data organization, spreadsheets, documentation, and simple workflow assistance.</p>
+      <p>I work with clients through Upwork and direct communication, delivering outputs that are straightforward to review, validate, and use right away.</p>
     </div>
     <div class="reveal">
       <div class="detail-row"><span class="detail-label">Location</span><span class="detail-value">Cascavel, Paraná — Brazil</span></div>
       <div class="detail-row"><span class="detail-label">Available on</span><span class="detail-value accent">Upwork · Direct Contracts</span></div>
       <div class="detail-row"><span class="detail-label">Languages</span><span class="detail-value">English (fluent) · PT (native)</span></div>
-      <div class="detail-row"><span class="detail-label">Turnaround</span><span class="detail-value">2–3 business days/article</span></div>
-      <div class="detail-row"><span class="detail-label">Specialties</span><span class="detail-value">SaaS · E-commerce · Affiliate</span></div>
+      <div class="detail-row"><span class="detail-label">Working style</span><span class="detail-value">Clear communication · practical outputs</span></div>
+      <div class="detail-row"><span class="detail-label">Support areas</span><span class="detail-value">Research · Data · Docs · Admin</span></div>
       <div class="detail-row"><span class="detail-label">Status</span><span class="detail-value accent">● Open to work</span></div>
     </div>
   </div>
@@ -208,45 +179,45 @@ footer{border-top:1px solid var(--border);padding:2rem 4rem;display:flex;justify
 <section id="services">
   <div class="section-header reveal"><span class="section-num">02</span><h2 class="section-title">Services</h2><div class="section-line"></div></div>
   <div class="services-grid reveal">
-    <div class="service-card"><span class="service-icon">✍️</span><h3 class="service-name">SEO Blog Posts</h3><p class="service-desc">Long-form articles built to rank on Google and keep readers engaged from intro to CTA. Every post is researched, structured, and optimized for both search engines and humans.</p><div class="service-tags"><span class="tag">1,000–2,500+ words</span><span class="tag">Keyword research</span><span class="tag">H1–H3 structure</span><span class="tag">FAQ Schema</span></div></div>
-    <div class="service-card"><span class="service-icon">🌐</span><h3 class="service-name">Web Copywriting</h3><p class="service-desc">Homepage, about and service pages written to convert visitors with clear, benefit-driven messaging. Copy that speaks to pain points and drives action.</p><div class="service-tags"><span class="tag">Pain-aware copy</span><span class="tag">Benefit bullets</span><span class="tag">Urgency &amp; CTA</span><span class="tag">SEO meta</span></div></div>
-    <div class="service-card"><span class="service-icon">🛒</span><h3 class="service-name">Product Descriptions</h3><p class="service-desc">Compelling, keyword-rich product copy for Shopify and Amazon that drives purchase decisions. Emotional hooks blended naturally with SEO best practices.</p><div class="service-tags"><span class="tag">150–300 words</span><span class="tag">Emotional hooks</span><span class="tag">Natural keywords</span><span class="tag">Bulk rates</span></div></div>
-    <div class="service-card"><span class="service-icon">🔍</span><h3 class="service-name">Keyword Research</h3><p class="service-desc">Strategic mapping to find high-intent, low-competition opportunities for your niche. Delivered as a ready-to-use content cluster plan in spreadsheet format.</p><div class="service-tags"><span class="tag">Competitor gap</span><span class="tag">Search intent</span><span class="tag">Content clusters</span><span class="tag">Spreadsheet</span></div></div>
+    <div class="service-card"><span class="service-icon">🔎</span><h3 class="service-name">Web Research</h3><p class="service-desc">Online research for leads, competitors, tools, directories, references, and structured findings delivered in a clear format.</p><div class="service-tags"><span class="tag">Market scanning</span><span class="tag">Competitor research</span><span class="tag">Lead lists</span><span class="tag">Source links</span></div></div>
+    <div class="service-card"><span class="service-icon">📊</span><h3 class="service-name">Data Organization</h3><p class="service-desc">Cleaning, structuring, categorizing, and organizing digital information so it becomes easier to use, track, and review.</p><div class="service-tags"><span class="tag">Cleanup</span><span class="tag">Formatting</span><span class="tag">Categorization</span><span class="tag">Data entry</span></div></div>
+    <div class="service-card"><span class="service-icon">🧾</span><h3 class="service-name">Spreadsheets &amp; Documentation</h3><p class="service-desc">Simple spreadsheets, trackers, SOPs, checklists, summaries, and process documents built for clarity and handoff.</p><div class="service-tags"><span class="tag">Google Sheets</span><span class="tag">Excel</span><span class="tag">SOPs</span><span class="tag">Checklists</span></div></div>
+    <div class="service-card"><span class="service-icon">⚙️</span><h3 class="service-name">Simple Automation Support</h3><p class="service-desc">Basic assistance with repetitive digital workflows, lightweight AI-assisted routines, and operational tasks that benefit from clearer structure.</p><div class="service-tags"><span class="tag">Simple workflows</span><span class="tag">Process support</span><span class="tag">Digital admin</span><span class="tag">AI-assisted ops</span></div></div>
   </div>
 </section>
 
 <section id="portfolio">
-  <div class="section-header reveal"><span class="section-num">03</span><h2 class="section-title">Portfolio</h2><div class="section-line"></div></div>
+  <div class="section-header reveal"><span class="section-num">03</span><h2 class="section-title">Sample Work</h2><div class="section-line"></div></div>
   <div class="portfolio-grid reveal">
-    <div class="portfolio-card"><div class="portfolio-num">01</div><div class="portfolio-type">Blog Post · SEO</div><h3 class="portfolio-title">10 Best On-Page SEO Techniques for 2025</h3><p class="portfolio-desc">2,200-word guide for small business owners covering meta tags, internal linking, schema markup and content structure.</p><p class="portfolio-meta">H1–H3 structure · keyword density &lt;2% · FAQ schema</p></div>
-    <div class="portfolio-card"><div class="portfolio-num">02</div><div class="portfolio-type">Web Copy · SaaS</div><h3 class="portfolio-title">SaaS Landing Page — Project Management Tool</h3><p class="portfolio-desc">Hero copy, feature benefits and 3-step CTA funnel for a B2B software client targeting SMBs.</p><p class="portfolio-meta">Pain-aware copy · benefit bullets · urgency CTA</p></div>
-    <div class="portfolio-card"><div class="portfolio-num">03</div><div class="portfolio-type">Descriptions · E-commerce</div><h3 class="portfolio-title">Pet Store — 15 Product Descriptions</h3><p class="portfolio-desc">150–200 word descriptions optimized for Amazon and Shopify with emotional triggers and natural keyword integration.</p><p class="portfolio-meta">Emotional hooks + SEO keywords blended naturally</p></div>
-    <div class="portfolio-card"><div class="portfolio-num">04</div><div class="portfolio-type">Blog Post · Affiliate</div><h3 class="portfolio-title">How to Start a Dropshipping Business in 2025</h3><p class="portfolio-desc">1,800-word pillar article with step-by-step structure, internal links and affiliate anchor strategy.</p><p class="portfolio-meta">Pillar content · long-tail keywords · CTA placement</p></div>
-    <div class="portfolio-card"><div class="portfolio-num">05</div><div class="portfolio-type">Web Copy · Local SEO</div><h3 class="portfolio-title">Local Business Website — Law Firm (3 pages)</h3><p class="portfolio-desc">Homepage, services and about page optimized for local search intent with E-E-A-T structure and trust signals.</p><p class="portfolio-meta">Local keywords · E-E-A-T signals · contact CTA</p></div>
-    <div class="portfolio-card"><div class="portfolio-num">06</div><div class="portfolio-type">Strategy · Research</div><h3 class="portfolio-title">Content Cluster Plan — Digital Marketing Blog</h3><p class="portfolio-desc">Keyword research and cluster mapping for a 12-article pillar strategy targeting 8 core topics.</p><p class="portfolio-meta">12 articles mapped · competitor gap identified</p></div>
+    <div class="portfolio-card"><div class="portfolio-num">01</div><div class="portfolio-type">Representative Work</div><h3 class="portfolio-title">Lead Research and Structured Prospect List</h3><p class="portfolio-desc">Researched companies, filtered relevant contacts, and organized findings into a spreadsheet with links, categories, and notes for easy follow-up.</p><p class="portfolio-meta">Research · validation · spreadsheet organization</p></div>
+    <div class="portfolio-card"><div class="portfolio-num">02</div><div class="portfolio-type">Representative Work</div><h3 class="portfolio-title">Spreadsheet Cleanup and Data Standardization</h3><p class="portfolio-desc">Reviewed inconsistent spreadsheet rows, standardized fields, removed duplicates, and organized entries into a cleaner operational structure.</p><p class="portfolio-meta">Cleanup · formatting · consistency review</p></div>
+    <div class="portfolio-card"><div class="portfolio-num">03</div><div class="portfolio-type">Representative Work</div><h3 class="portfolio-title">Research Summary for Market and Competitor Review</h3><p class="portfolio-desc">Collected public information from multiple sources, summarized key findings, and delivered a concise document for quick decision support.</p><p class="portfolio-meta">Source gathering · summarization · handoff-ready notes</p></div>
+    <div class="portfolio-card"><div class="portfolio-num">04</div><div class="portfolio-type">Representative Work</div><h3 class="portfolio-title">Simple SOP and Checklist Documentation</h3><p class="portfolio-desc">Turned repeatable operational steps into a clear SOP and checklist so the work could be reused, delegated, and reviewed more easily.</p><p class="portfolio-meta">Documentation · process clarity · repeatable work</p></div>
+    <div class="portfolio-card"><div class="portfolio-num">05</div><div class="portfolio-type">Representative Work</div><h3 class="portfolio-title">Content and Information Organization Support</h3><p class="portfolio-desc">Organized scattered notes, links, and references into a more structured working document with sections, priorities, and cleaner navigation.</p><p class="portfolio-meta">Information architecture · organization · documentation</p></div>
+    <div class="portfolio-card"><div class="portfolio-num">06</div><div class="portfolio-type">Representative Work</div><h3 class="portfolio-title">Simple Workflow Assistance for Digital Tasks</h3><p class="portfolio-desc">Supported recurring online tasks with clearer steps, better organization, and lightweight process improvements to reduce friction in day-to-day execution.</p><p class="portfolio-meta">Operational support · simple workflows · task structure</p></div>
   </div>
 </section>
 
 <section id="skills">
   <div class="section-header reveal"><span class="section-num">04</span><h2 class="section-title">Skills &amp; Tools</h2><div class="section-line"></div></div>
   <div class="skills-grid reveal">
-    <div class="skill-group"><h4>Writing</h4><ul class="skill-list"><li>SEO Blog Posts</li><li>Web Copywriting</li><li>Product Descriptions</li><li>Email Copy</li><li>Content Strategy</li></ul></div>
-    <div class="skill-group"><h4>SEO</h4><ul class="skill-list"><li>On-Page SEO</li><li>Keyword Research</li><li>Content Clusters</li><li>Search Intent</li><li>Schema Markup</li></ul></div>
-    <div class="skill-group"><h4>Tools</h4><ul class="skill-list"><li>Surfer SEO</li><li>Ahrefs / SEMrush</li><li>Google Search Console</li><li>WordPress</li><li>Shopify</li></ul></div>
-    <div class="skill-group"><h4>Soft Skills</h4><ul class="skill-list"><li>Clear Communicator</li><li>Fast Turnaround</li><li>Detail-Oriented</li><li>Deadline-Driven</li><li>Accountable</li></ul></div>
+    <div class="skill-group"><h4>Research</h4><ul class="skill-list"><li>Web Research</li><li>Competitor Review</li><li>Lead Sourcing</li><li>Source Validation</li><li>Information Gathering</li></ul></div>
+    <div class="skill-group"><h4>Data</h4><ul class="skill-list"><li>Data Entry</li><li>Spreadsheet Cleanup</li><li>Data Organization</li><li>Categorization</li><li>Tracking Sheets</li></ul></div>
+    <div class="skill-group"><h4>Documentation</h4><ul class="skill-list"><li>Google Docs</li><li>SOP Writing</li><li>Checklists</li><li>Summaries</li><li>Handoff Documents</li></ul></div>
+    <div class="skill-group"><h4>Tools</h4><ul class="skill-list"><li>Google Sheets</li><li>Microsoft Excel</li><li>Notion</li><li>Airtable (basic workflows)</li><li>ChatGPT / OpenClaw</li></ul></div>
   </div>
 </section>
 
 <section id="contact">
-  <div class="section-header reveal"><span class="section-num">05</span><h2 class="section-title">Let's Work</h2><div class="section-line"></div></div>
+  <div class="section-header reveal"><span class="section-num">05</span><h2 class="section-title">Contact</h2><div class="section-line"></div></div>
   <div class="contact-grid">
     <div class="reveal">
-      <h2 class="contact-headline">Ready to rank<br>higher &amp; convert<br><span>more?</span></h2>
-      <p class="contact-sub">Reach out through any channel below. I typically respond within a few hours. Available for one-off articles, full content plans, or ongoing monthly writing.</p>
+      <h2 class="contact-headline">Need reliable help with<br>research, data, docs, or<br><span>simple operations?</span></h2>
+      <p class="contact-sub">If you need clear digital support with tasks that are simple to define and easy to review, send me the scope and I can help organize the work into practical deliverables.</p>
       <div>
         <a href="mailto:taffarel.willian.pereira@gmail.com" class="contact-link"><span class="cl-label">Email</span><span class="cl-value">taffarel.willian.pereira@gmail.com</span><span class="cl-arrow">→</span></a>
         <a href="https://wa.me/5545991258119" class="contact-link" target="_blank"><span class="cl-label">WhatsApp</span><span class="cl-value">+55 (45) 99125-8119</span><span class="cl-arrow">→</span></a>
-        <a href="https://t.me/+5545991258119" class="contact-link" target="_blank"><span class="cl-label">Telegram</span><span class="cl-value">@taffapereira</span><span class="cl-arrow">→</span></a>
+        <a href="https://t.me/taffapereira" class="contact-link" target="_blank"><span class="cl-label">Telegram</span><span class="cl-value">@taffapereira</span><span class="cl-arrow">→</span></a>
         <a href="https://www.upwork.com/freelancers/~01f286843e9959cfcf" class="contact-link" target="_blank"><span class="cl-label">Upwork</span><span class="cl-value">upwork.com/freelancers/taffarel</span><span class="cl-arrow">→</span></a>
         <a href="https://br.linkedin.com/in/taffarel-pereira-2b649459" class="contact-link" target="_blank"><span class="cl-label">LinkedIn</span><span class="cl-value">linkedin.com/in/taffarel-pereira</span><span class="cl-arrow">→</span></a>
       </div>
@@ -254,10 +225,10 @@ footer{border-top:1px solid var(--border);padding:2rem 4rem;display:flex;justify
     <div class="reveal">
       <div class="cta-box">
         <span class="cta-badge">● Open for Projects</span>
-        <h3 class="cta-title">Start a Project Today</h3>
-        <p class="cta-desc">One article, a full content plan, or ongoing monthly writing — I adapt to your needs and budget.</p>
-        <div class="cta-price">Fixed <span>/ project</span></div>
-        <p class="cta-note">No hourly billing — clear scope, clear price.</p>
+        <h3 class="cta-title">Start with a Clear Task</h3>
+        <p class="cta-desc">Web research, spreadsheet cleanup, documentation, simple workflow support, or digital admin tasks with clear scope and practical delivery.</p>
+        <div class="cta-price">$18 <span>/ hour on Upwork</span></div>
+        <p class="cta-note">Simple digital support with clear deliverables and easy review.</p>
         <a href="https://www.upwork.com/freelancers/~01f286843e9959cfcf" class="btn-full" target="_blank">Hire on Upwork</a>
         <a href="https://wa.me/5545991258119" class="btn-full-ghost" target="_blank">Message on WhatsApp</a>
       </div>
@@ -267,7 +238,7 @@ footer{border-top:1px solid var(--border);padding:2rem 4rem;display:flex;justify
 
 <footer>
   <span class="footer-logo">Taffarel Pereira</span>
-  <span class="footer-copy">© 2026 · SEO Content Writer · Cascavel, Brazil</span>
+  <span class="footer-copy">© 2026 · Digital Operations Support · Cascavel, Brazil</span>
   <ul class="footer-links">
     <li><a href="mailto:taffarel.willian.pereira@gmail.com">Email</a></li>
     <li><a href="https://wa.me/5545991258119" target="_blank">WhatsApp</a></li>
